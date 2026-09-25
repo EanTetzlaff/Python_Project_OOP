@@ -1,0 +1,14 @@
+i = 1
+myList = {}
+
+print("Welcome to Choice Rentals!")
+
+while True:
+    print("1: Enter your City")
+    print("2: Enter your State")
+    print("3: Enter your Zip Code")
+    print("4: Enter your address")
+
+    choice = input("Enter your choice: ")
+
+    
