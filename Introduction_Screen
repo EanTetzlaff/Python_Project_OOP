@@ -4,11 +4,23 @@ myList = {}
 print("Welcome to Choice Rentals!")
 
 while True:
-    print("1: Enter your City")
-    print("2: Enter your State")
-    print("3: Enter your Zip Code")
-    print("4: Enter your address")
+    print("1: Renter Signin")
+    print("2: Host Signin")
+    print("3: Employee Signin")
 
     choice = input("Enter your choice: ")
 
-    
+    if choice == "1":
+        State = input("Enter your state: ")
+        City = input("Enter your city: ")
+        Address = input("Enter your address: ")
+        print("Continue to vehicle selection")
+
+    elif choice == "2":
+        State = input("Enter your state: ")
+        City = input("Enter your city: ")
+        Address = input("Enter your address: ")
+        print("Continue to select a vehicle to host!")
+
+    elif choice == "3":
+        Login = input("Enter your login credentials: ")
