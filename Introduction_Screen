@@ -1,7 +1,7 @@
 i = 1
 myList = {}
 
-print("Welcome to Choice Rentals!")
+print("Welcome to Choice Rentals!")        #need to add country page which adapts to miles/kilometers for next step
 
 while True:
     print("1: Renter Signin")
