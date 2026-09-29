@@ -15,7 +15,7 @@ while True:
         Brand = input("Enter the desired brand: ")
         Model = input("Enter the desired model: ")
         Year = input("Enter the desired year: ")
-        Address = input("Enter the desired color: ")
+        Color = input("Enter the desired color: ")
         Mileage = input("Enter the desired mileage: ")
         print("Continue to your personalized results!")
         break
@@ -24,7 +24,7 @@ while True:
         Brand = input("Enter the desired brand: ")
         Model = input("Enter the desired model: ")
         Year = input("Enter the desired year: ")
-        Address = input("Enter the desired color: ")
+        Color = input("Enter the desired color: ")
         Mileage = input("Enter the desired mileage: ")
         print("Continue to your personalized results!")
         break
@@ -33,7 +33,7 @@ while True:
         Brand = input("Enter the desired brand: ")
         Model = input("Enter the desired model: ")
         Year = input("Enter the desired year: ")
-        Address = input("Enter the desired color: ")
+        Color = input("Enter the desired color: ")
         Mileage = input("Enter the desired mileage: ")
         print("Continue to your personalized results!")
         break
@@ -42,7 +42,7 @@ while True:
         Brand = input("Enter the desired brand: ")
         Model = input("Enter the desired model: ")
         Year = input("Enter the desired year: ")
-        Address = input("Enter the desired color: ")
+        Color = input("Enter the desired color: ")
         Mileage = input("Enter the desired mileage: ")
         print("Continue to your personalized results!")
         break
