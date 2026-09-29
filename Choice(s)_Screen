@@ -1,7 +1,7 @@
 i = 1
 myList = {}
 
-print("Let's choose your personalized vehicle!")
+print("Let's find your personalized vehicle!")
 
 while True:
     print("1: SUV")
