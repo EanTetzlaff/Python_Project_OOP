@@ -1,0 +1,26 @@
+i = 1
+myList = {}
+
+print("Great news!")
+print("We found ___ vehicles ___ within ___ paramaters")
+
+while True:
+    print("1: Quick Select")
+    print("2: Preview all options")
+    print("3: Edit desired choices")
+
+    choice = input("Enter your choice: ")
+
+    if choice == "1":
+        print("Continue to confirmation!")
+        break
+
+    if choice == "2":
+        print("Continue to confirmation!")
+        break
+
+    if choice == "3":
+        print("Continue to confirmation!")
+        break
+
+
