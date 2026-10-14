@@ -1,1 +1,47 @@
+myList = {}
 
+print("Let's list your personalized vehicle!")
+
+while True:
+    print("1: SUV")
+    print("2: Sedan")
+    print("3: Minivan")
+    print("4: Truck")
+
+    choice = input("Enter your choice: ")
+
+    if choice == "1":
+        Brand = input("Enter the brand: ")
+        Model = input("Enter the model: ")
+        Year = input("Enter the year: ")
+        Color = input("Enter the color: ")
+        Mileage = input("Enter the  mileage: ")
+        print("")
+        break
+
+    if choice == "2":
+        Brand = input("Enter the brand: ")
+        Model = input("Enter the model: ")
+        Year = input("Enter the year: ")
+        Color = input("Enter the color: ")
+        Mileage = input("Enter the mileage: ")
+        print("")
+        break
+
+    if choice == "3":
+        Brand = input("Enter the brand: ")
+        Model = input("Enter the model: ")
+        Year = input("Enter the year: ")
+        Color = input("Enter the color: ")
+        Mileage = input("Enter the mileage: ")
+        print("")
+        break
+
+    if choice == "4":
+        Brand = input("Enter the brand: ")
+        Model = input("Enter the model: ")
+        Year = input("Enter the year: ")
+        Color = input("Enter the color: ")
+        Mileage = input("Enter the mileage: ")
+        print("")
+        break
