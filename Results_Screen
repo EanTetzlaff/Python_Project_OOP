@@ -16,11 +16,11 @@ while True:
         break
 
     if choice == "2":
-        print("Continue to confirmation!")
+        print("Review all of our vehicle options!")
         break
 
     if choice == "3":
-        print("Continue to confirmation!")
+        print("Continue to edit your choices!")
         break
 
 
