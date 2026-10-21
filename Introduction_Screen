@@ -26,7 +26,7 @@ while True:
     elif choice == "3":
         Login = input("Enter your login credentials: ")
     
-    elif choice == "4"
+    elif choice == "4":
         Name = input("Enter your name: ")
         DOB = int(input("Enter your Date of Birth: "))
         Password = input(" Create a strong password: ")
