@@ -6,7 +6,8 @@ print("Welcome to Choice Rentals!")        #need to add country page which adapt
 while True:
     print("1: Renter Signin")
     print("2: Host Signin")
-    print("3: Admin Signin")        #make signin page
+    print("3: Admin Signin")
+    print("4: Sign Up!")
 
     choice = input("Enter your choice: ")
 
