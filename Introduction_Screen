@@ -16,17 +16,18 @@ while True:
         City = input("Enter your city: ")
         Address = input("Enter your address: ")
         print("Continue to vehicle selection")
-
+        break
     elif choice == "2":
         State = input("Enter your state: ")
         City = input("Enter your city: ")
         Address = input("Enter your address: ")
         print("Continue to select a vehicle to host!")
-
+        break
     elif choice == "3":
         Login = input("Enter your login credentials: ")
-    
+        break
     elif choice == "4":
         Name = input("Enter your name: ")
         DOB = int(input("Enter your Date of Birth: "))
         Password = input(" Create a strong password: ")
+        break
