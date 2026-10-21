@@ -1,0 +1,73 @@
+import pickle
+from asyncio import run
+
+class SUV:
+    def __init__(self, brand, model, year, color, milage):
+        self.brand = brand
+        self.model = model
+        self.year = year
+        self.color = color
+        self.milage = milage
+
+    def display(self):
+        print(f"brand: {self.brand}, model: {self.model}, year: {self.year}, color: {self.color}, milage: {self.milage}")
+
+class Sedan:
+    def __init__(self, brand, model, year, color, milage):
+        self.brand = brand
+        self.model = model
+        self.year = year
+        self.color = color
+        self.milage = milage
+
+    def display(self):
+        print(f"brand: {self.brand}, model: {self.model}, year: {self.year}, color: {self.color}, milage: {self.milage}")
+
+class Minivan:
+    def __init__(self, brand, model, year, color, milage):
+        self.brand = brand
+        self.model = model
+        self.year = year
+        self.color = color
+        self.milage = milage
+
+    def display(self):
+        print(f"brand: {self.brand}, model: {self.model}, year: {self.year}, color: {self.color}, milage: {self.milage}")
+
+class Truck:
+    def __init__(self, brand, model, year, color, milage):
+        self.brand = brand
+        self.model = model
+        self.year = year
+        self.color = color
+        self.milage = milage
+
+    def display(self):
+        print(f"brand: {self.brand}, model: {self.model}, year: {self.year}, color: {self.color}, milage: {self.milage}")
+
+
+
+
+suv = [
+SUV("Honda", "Pilot", 2026, "White",100),
+SUV("Toyota", "Rav 4", 2026, "White",100),
+SUV("Ford", "Explorer", 2026, "White",100)
+]
+
+sedan = [
+Sedan("Honda", "Civic", 2026, "White", 100),
+Sedan("Toyota", "Camry", 2026, "White", 100),
+Sedan("Ford", "Mustang", 2026, "White", 100)
+]
+
+minivan = [
+Minivan(996, "Jack", "Password125", "123 Street St", "582=583-5839", "Jack@outlook.com"),
+Minivan(997, "Ean", "Password124", "683 Owl Ave", "683-583-5839","Ean@gmail.com"),
+Minivan(998, "Justus", "Password123", "652 Hutch Dr", "598-473-4859", "Justus@jbu.edu")
+]
+
+truck = [
+Truck(996, "Jack", "Password125", "123 Street St", "582=583-5839", "Jack@outlook.com"),
+Truck(997, "Ean", "Password124", "683 Owl Ave", "683-583-5839","Ean@gmail.com"),
+Truck(998, "Justus", "Password123", "652 Hutch Dr", "598-473-4859", "Justus@jbu.edu")
+]
