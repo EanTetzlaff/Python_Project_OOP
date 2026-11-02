@@ -1,33 +1,71 @@
-i = 1
-myList = {}
+import streamlit as st
 
-print("Welcome to Choice Rentals!")        #need to add country page which adapts to miles/kilometers for next step
+st.title("Welcome to Choice Rentals")
 
-while True:
-    print("1: Renter Signin")
-    print("2: Host Signin")
-    print("3: Admin Signin")
-    print("4: Sign Up!")
 
-    choice = input("Enter your choice: ")
+st.markdown("**Sign in or Create Account!**") #one star to italicize, two to bold
+if st.button("Renter signin"):
+    st.text_input("Enter your Email Address")
+    st.text_input("Enter your Password")
+if st.button("Host signin"):
+    st.text_input("Enter your Email Address")
+    st.text_input("Enter your Password")
+if st.button("Admin signin"):
+    st.text_input("Enter your Email Address")
+    st.text_input("Enter your Password")
+if st.button("Sign Up"):
+        st.text_input("Enter your Date of Birth")
+        st.text_input("Enter your Email Address")
+        st.text_input("Create a strong Password")
+class Renter:
+    def __init__(self):
+        self.email = ""
+        self.password = ""
 
-    if choice == "1":
-        State = input("Enter your state: ")
-        City = input("Enter your city: ")
-        Address = input("Enter your address: ")
+    def signin(self):
+        self.email = st.text_input("Enter your Email Address")
+        self.password = st.text_input("Enter your Password")
         print("Continue to vehicle selection")
-        break
-    elif choice == "2":
-        State = input("Enter your state: ")
-        City = input("Enter your city: ")
-        Address = input("Enter your address: ")
-        print("Continue to select a vehicle to host!")
-        break
-    elif choice == "3":
-        Login = input("Enter your login credentials: ")
-        break
-    elif choice == "4":
-        Name = input("Enter your name: ")
-        DOB = int(input("Enter your Date of Birth: "))
-        Password = input(" Create a strong password: ")
-        break
+
+
+class Host:
+    def __init__(self):
+        self.email = ""
+        self.password = ""
+
+    def signin(self):
+        self.email = st.text_input("Enter your Email Address")
+        self.password = st.text_input("Enter your Password")
+        print("Continue to vehicle selection")
+
+
+class Admin:
+    def __init__(self):
+        self.email = ""
+        self.password = ""
+
+    def signin(self):
+        self.email = st.text_input("Enter your Email Address")
+        self.password = st.text_input("Enter your Password")
+        print("Continue to admin portal")
+
+class SignUp:
+    def __init__(self):
+        self.dob = ""
+        self.email = ""
+        self.password = ""
+
+    def signup(self):
+        self.dob = st.text_input("Enter your Date of Birth")
+        self.email = st.text_input("Enter your Email Address")
+        self.password = st.text_input("Create a strong Password")
+        print("Continue to admin portal")
+
+
+
+
+userEmailID = st.text_input("Enter your Email Address")
+userMessage = st.text_area("Your Message")
+st.button("Send Message")
+
+
