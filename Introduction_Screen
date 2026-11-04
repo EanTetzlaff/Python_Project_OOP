@@ -4,19 +4,36 @@ st.title("Welcome to Choice Rentals")
 
 
 st.markdown("**Sign in or Create Account!**") #one star to italicize, two to bold
-if st.button("Renter signin"):
-    st.text_input("Enter your Email Address")
-    st.text_input("Enter your Password")
-if st.button("Host signin"):
-    st.text_input("Enter your Email Address")
-    st.text_input("Enter your Password")
-if st.button("Admin signin"):
-    st.text_input("Enter your Email Address")
-    st.text_input("Enter your Password")
-if st.button("Sign Up"):
-        st.text_input("Enter your Date of Birth")
+col1,col2,col3,col4 = st.columns(4)
+if col1.button("Renter signin"):
+    with st.form("Sign up"):
         st.text_input("Enter your Email Address")
-        st.text_input("Create a strong Password")
+        st.text_input("Enter your Password")
+        submitted = st.form_submit_button("Sign In")
+        if submitted:
+            print("Sign up successful")
+if col2.button("Host signin"):
+    with st.form("Sign up"):
+        st.text_input("Enter your Email Address")
+        st.text_input("Enter your Password")
+        submitted = st.form_submit_button("Sign In")
+        if submitted:
+            print("Sign up successful")
+if col3.button("Admin signin"):
+    with st.form("Sign up"):
+        st.text_input("Enter your Email Address")
+        st.text_input("Enter your Password")
+        submitted = st.form_submit_button("Sign In")
+        if submitted:
+            print("Sign up successful")
+if col4.button("Sign up"):
+        with st.form("Sign up"):
+            st.text_input("Enter your Date of Birth")
+            st.text_input("Enter your Email Address")
+            st.text_input("Create a strong Password")
+            submitted = st.form_submit_button("Sign up")
+            if submitted:
+                print("Sign up successful")
 class Renter:
     def __init__(self):
         self.email = ""
@@ -37,7 +54,6 @@ class Host:
         self.email = st.text_input("Enter your Email Address")
         self.password = st.text_input("Enter your Password")
         print("Continue to vehicle selection")
-
 
 class Admin:
     def __init__(self):
@@ -60,12 +76,3 @@ class SignUp:
         self.email = st.text_input("Enter your Email Address")
         self.password = st.text_input("Create a strong Password")
         print("Continue to admin portal")
-
-
-
-
-userEmailID = st.text_input("Enter your Email Address")
-userMessage = st.text_area("Your Message")
-st.button("Send Message")
-
-
