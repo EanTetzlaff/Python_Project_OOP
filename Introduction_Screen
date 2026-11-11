@@ -1,10 +1,13 @@
 import streamlit as st
 
+
 st.title("Welcome to Choice Rentals")
 
 
 st.markdown("**Sign in or Create Account!**") #one star to italicize, two to bold
 col1,col2,col3,col4 = st.columns(4)
+if "current_page" not in st.session_state:
+    st.session_state["current_page"] = st.session_state.current_page = "Intro_Website_GUI.py"
 if col1.button("Renter signin"):
     with st.form("Sign up"):
         st.text_input("Enter your Email Address")
