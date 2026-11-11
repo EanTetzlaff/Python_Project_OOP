@@ -6,6 +6,11 @@ st.title("Welcome to Choice Rentals")
 
 st.markdown("**Sign in or Create Account!**") #one star to italicize, two to bold
 col1,col2,col3,col4 = st.columns(4)
+
+col1.page_link("pages/user_choice_screen.py", label="Renter signin")
+col2.page_link("pages/host_screen.py", label="Host signin")
+col3.page_link("pages/admin_screen.py", label="Admin signin")
+col4.page_link("pages/Sign_Up_Screen.py", label="Sign up")
 if "current_page" not in st.session_state:
     st.session_state["current_page"] = st.session_state.current_page = "Intro_Website_GUI.py"
 if col1.button("Renter signin"):
