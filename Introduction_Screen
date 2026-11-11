@@ -1,7 +1,18 @@
 import streamlit as st
 
+st.markdown(
+"""
+    <style>
+        [data-testid="stSidebarNav"] [display: none !important;}
+        [data-testid="stSidebar"] {display: none !important;}
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
 st.title("Welcome to Choice Rentals")
 st.markdown("**Sign in or Create Account!**") #one star to italicize, two to bold
+
 
 if "active_tab" not in st.session_state:
     st.session_state["active_tab"] = st.session_state["active_tab"] = "renter"
@@ -10,11 +21,11 @@ col1,col2,col3,col4 = st.columns(4)
 
 if col1.button("Renter signin"):
     st.session_state["active_tab"] = "renter"
-if col1.button("Host signin"):
+if col2.button("Host signin"):
     st.session_state["active_tab"] = "host"
-if col1.button("Admin signin"):
+if col3.button("Admin signin"):
     st.session_state["active_tab"] = "admin"
-if col1.button("Sign up"):
+if col4.button("Sign up"):
     st.session_state["active_tab"] = "signup"
 
 if st.session_state["active_tab"] == "renter":
