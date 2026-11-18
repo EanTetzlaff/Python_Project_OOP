@@ -1,26 +1,24 @@
-i = 1
-myList = {}
+import streamlit as st
 
-print("Great news!")
-print("We found ___ vehicles ___ within ___ paramaters")
+st.title("Great News!")
+st.subheader("We found vehicles within your desired paramaters!")
+st.balloons()
 
-while True:
-    print("1: Quick Select")
-    print("2: Preview all options")
-    print("3: Edit desired choices")
+if "vehicle_data_user" in st.session_state:
+    data = st.session_state["vehicle_data_user"]
+    st.write(
+        f"**Selected Criteria:** {data['year']} {data['brand']} "
+        f"{data['model']} {data['color']}"
+    )
 
-    choice = input("Enter your choice: ")
+st.text("You're almost done!", text_alignment="center")
 
-    if choice == "1":
-        print("Continue to confirmation!")
-        break
+if st.button("1: Quick Select", use_container_width=True):
+    st.success("Continue to confirmation!")
+    st.switch_page("pages/confirmation_screen.py")
 
-    if choice == "2":
-        print("Review all of our vehicle options!")
-        break
+if st.button("2: Preview all options", use_container_width=True):
+    st.info("Review all of our vehicle options!") #Add this button
 
-    if choice == "3":
-        print("Continue to edit your choices!")
-        break
-
-
+if st.button("3: Edit your desired choices", use_container_width=True):
+    st.switch_page("pages/user_choice_screen.py")
