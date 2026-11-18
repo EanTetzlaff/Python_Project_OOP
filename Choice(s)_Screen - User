@@ -1,15 +1,16 @@
-i = 1
-myList = {}
+import streamlit as st
 
-print("Let's find your personalized vehicle!")
+st.title("Let's find your personalized vehicle!")
 
-while True:
-    print("1: SUV")
-    print("2: Sedan")
-    print("3: Minivan")
-    print("4: Truck")
+choice = st.selectbox(
+    "Select your vehicle type:",
+    ["SUV", "Sedan", "Minivan", "Truck"]
+)
 
-    choice = input("Enter your choice: ")
+with st.form
+
+
+
 
     if choice == "1":
         Brand = input("Enter the desired brand: ")
@@ -46,5 +47,3 @@ while True:
         Mileage = input("Enter the desired mileage: ")
         print("Continue to your personalized results!")
         break
-
-
