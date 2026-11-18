@@ -2,7 +2,7 @@ import streamlit as st
 
 st.title("Great News!")
 st.subheader("We found vehicles within your desired paramaters!")
-st.balloons()
+st.confetti()
 
 if "vehicle_data_user" in st.session_state:
     data = st.session_state["vehicle_data_user"]
