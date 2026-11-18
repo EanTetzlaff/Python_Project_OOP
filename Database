@@ -61,13 +61,13 @@ Sedan("Ford", "Mustang", 2026, "White", 100)
 ]
 
 minivan = [
-Minivan(996, "Jack", "Password125", "123 Street St", "582=583-5839", "Jack@outlook.com"),
-Minivan(997, "Ean", "Password124", "683 Owl Ave", "683-583-5839","Ean@gmail.com"),
-Minivan(998, "Justus", "Password123", "652 Hutch Dr", "598-473-4859", "Justus@jbu.edu")
+Minivan("Toyota", "Sienna", "2026", "Red", 1200),
+Minivan("Honda", "Odyssey", "2026", "Red", 1200),
+Minivan("Kia", "Carnival", "2026", "Red", 1200)
 ]
 
 truck = [
-Truck(996, "Jack", "Password125", "123 Street St", "582=583-5839", "Jack@outlook.com"),
-Truck(997, "Ean", "Password124", "683 Owl Ave", "683-583-5839","Ean@gmail.com"),
-Truck(998, "Justus", "Password123", "652 Hutch Dr", "598-473-4859", "Justus@jbu.edu")
+Truck("Chevy", "Silverado", "2026", "White", 1200),
+Truck("Ford", "F-150", "2026", "Blue", 1200),
+Truck("Toyota", "Tacoma", "2026", "Red", 1200
 ]
