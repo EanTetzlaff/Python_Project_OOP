@@ -1,0 +1,22 @@
+import streamlit as st
+
+st.title("Great News!")
+st.subheader("We found vehicles within your desired paramaters!")
+st.balloons()
+
+if "vehicle_data_user" in st.session_state:
+    data = st.session_state["vehicle_data_user"]
+    st.write(
+        f"**Selected Criteria:** {data['year']} {data['brand']} "
+        f"{data['model']} {data['color']}"
+    )
+
+st.text("You're almost done!", text_alignment="center")
+
+if st.button("Finalize your purchase", use_container_width=True):
+    st.success("Continue to confirmation!")
+    st.switch_page("pages/confirmation_screen.py")
+
+
+if st.button("Edit your desired choices", use_container_width=True):
+    st.switch_page("pages/user_choice_screen.py")
