@@ -1,22 +1,15 @@
 import streamlit as st
 
-st.title("Great News!")
-st.subheader("We found vehicles within your desired paramaters!")
-st.balloons()
+st.title("Finalize your purchase!")
 
-if "vehicle_data_user" in st.session_state:
-    data = st.session_state["vehicle_data_user"]
-    st.write(
-        f"**Selected Criteria:** {data['year']} {data['brand']} "
-        f"{data['model']} {data['color']}"
-    )
-
-st.text("You're almost done!", text_alignment="center")
-
-if st.button("Finalize your purchase", use_container_width=True):
-    st.success("Continue to confirmation!")
-    st.switch_page("pages/confirmation_screen.py")
+with st.form("Payment Information"):
+    st.info("Payment Information")
+    if st.form_submit_button("Pay with credit card"):
+        card_number = st.text_input("Enter your Credit Card Number", type="password")
+        name = st.text_input("Enter the name on your card")
+        exp_date = st.text_input("Enter your expiration date")
+        cvc = st.text_input("Enter your CVC")
+        st.form_submit_button("Pay Now")
 
 
-if st.button("Edit your desired choices", use_container_width=True):
-    st.switch_page("pages/user_choice_screen.py")
+
