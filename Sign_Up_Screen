@@ -1,1 +1,5 @@
+import streamlit as st
 
+st.title("You created your account")
+
+st.switch_page("pages/user_choice_screen.py")
