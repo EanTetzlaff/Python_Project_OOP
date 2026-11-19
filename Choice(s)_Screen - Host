@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("Let's input your personalized vehicle!")
+st.title("Let's input your vehicle!")
 
 choice = st.selectbox(
     "Select your vehicle type:",
@@ -8,11 +8,11 @@ choice = st.selectbox(
 )
 
 with st.form("Vehicle Info"):
-    brand = st.text_input("Enter the desired brand: ")
-    model = st.text_input("Enter the desired model: ")
-    year = st.text_input("Enter the desired year: ")
-    color = st.text_input("Enter the desired color: ")
-    mileage = st.text_input("Enter the desired mileage: ")
+    brand = st.text_input("Enter your vehicle's brand: ")
+    model = st.text_input("Enter vehicle's model: ")
+    year = st.text_input("Enter your vehicle's year: ")
+    color = st.text_input("Enter your vehicle's color: ")
+    mileage = st.text_input("Enter your vehicle's mileage: ")
 
     submitted = st.form_submit_button("Continue to your personalized results!")
 
@@ -26,4 +26,4 @@ if submitted:
         "mileage": mileage
     }
 
-    st.switch_page("pages/results_screen.py")            #fix to switch to next host page
+    st.switch_page("pages/Host_confirmation_screen.py")
