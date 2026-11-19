@@ -2,4 +2,5 @@ import streamlit as st
 
 st.title("You created your account")
 
-st.switch_page("pages/user_choice_screen.py")
+if st.button("1: Contuine to next screen" use_container_width=True):
+    st.switch_page("pages/user_choice_screen.py")
