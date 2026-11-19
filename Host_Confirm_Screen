@@ -1,0 +1,12 @@
+import streamlit as st
+
+st.title("Get Paid!")
+
+with st.form("Banking Information"):
+    st.info("Banking Information")
+    if st.form_submit_button("Enter bank account"):
+        acc_number = st.text_input("Enter your Banking account", type="password")
+        name = st.text_input("Enter the name on your account")
+        wire_number = st.text_input("Enter your wire number", type="password")
+        address = st.text_input("Enter your address", type="password")
+        st.form_submit_button("Pay Now")
