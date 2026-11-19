@@ -13,12 +13,10 @@ if "vehicle_data_user" in st.session_state:
 
 st.text("You're almost done!", text_alignment="center")
 
-if st.button("1: Quick Select", use_container_width=True):
+if st.button("Finalize your purchase", use_container_width=True):
     st.success("Continue to confirmation!")
     st.switch_page("pages/confirmation_screen.py")
 
-if st.button("2: Preview all options", use_container_width=True):
-    st.info("Review all of our vehicle options!") #Add this button
 
-if st.button("3: Edit your desired choices", use_container_width=True):
+if st.button("Edit your desired choices", use_container_width=True):
     st.switch_page("pages/user_choice_screen.py")
